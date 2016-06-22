@@ -4,9 +4,13 @@
 ##Activare
 
 ```
-<script src="https://raw.githubusercontent.com/Moldavianheart/power/master/platform.js"></script>
-<div id="mdht"></div>
-<script>
-	document.getElementById("mdht").innerHTML = [code_mdht_v1];
+<script id='mdhtconf'>
+(function() {
+var mhc =document.createElement('script');mhc.type = 'text/javascript';mhc.async = true; 
+mhc.src = ('https:' == document.location.protocol ? 'https://s' : 'http://s') + '.mdhtcdn.net/script/power.js';
+
+document.getElementsById('mdhtconf').appendChild(mhc); 
+
+})();
 </script>
 ```
